@@ -1,0 +1,21 @@
+{
+   "manifest_version": 2,
+   "name": "YT Music Console Log Extension",
+   "version": "1.0",
+   "description": "Prints information about the currently playing song on YouTube Music to the console",
+   "permissions": [
+      "activeTab",
+      "storage",
+      "tabs"
+   ],
+   "content_scripts": [
+      {
+         "matches": [
+            "https://music.youtube.com/*"
+         ],
+         "js": [
+            "content.js"
+         ]
+      }
+   ]
+}
